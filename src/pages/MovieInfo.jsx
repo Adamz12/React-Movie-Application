@@ -14,7 +14,8 @@ function MovieInfo() {
     async function fetchMovie() {
       try {
         const { data } = await axios.get(
-          `http://www.omdbapi.com/?apikey=59334251&i=${id}`
+          `https://www.omdbapi.com/?apikey=59334251&i=${id}`
+          
         );
         setMovie(data);
         console.log(data);
@@ -75,22 +76,22 @@ function MovieInfo() {
             </p>
           </div>
           <div className="movie--details__wrapper">
-            <p className="movie--subtitle movie--subtitle__margin-right">
+            <div className="movie--subtitle movie--subtitle__margin-right">
               <b>Running Time</b>
               <div className="movie--info__wrapper">
                 {movie.Runtime} <FaChevronRight />
               </div>
-            </p>
-            <p className="movie--subtitle movie--subtitle__margin-right box-office">
+            </div>
+            <div className="movie--subtitle movie--subtitle__margin-right box-office">
               <b>Box Office</b>
               <div className="movie--info__wrapper">
                 {movie.BoxOffice} <FaChevronRight />
               </div>
-            </p>
-            <p className="movie--subtitle">
+            </div>
+            <div className="movie--subtitle">
               <b>Released</b>
               <div className="movie--info__wrapper">{movie.Released}</div>
-            </p>
+            </div>
           </div>
         </div>
         <div className="border__line"></div>
