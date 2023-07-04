@@ -208,10 +208,10 @@ function Searchbar2() {
                           </div>
                           <div className="title__wrapper">
                             <h3>{movie.Title}</h3>
-                            <p>
+                            <div>
                               <b>Year: </b>
                               {movie.Year}
-                            </p>
+                            </div>
                           </div>
                         </div>
                       </div>
