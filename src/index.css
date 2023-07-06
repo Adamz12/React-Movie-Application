@@ -53,6 +53,14 @@ li {
   align-items: center;
 }
 
+/* 
+
+
+MODAL 
+
+
+*/
+
 .modal__overall {
   display: none;
 }
@@ -63,11 +71,11 @@ li {
   color: #eba75d;
 }
 
-#modal-title {
+.modal-title {
   color: white;
 }
 
-#modal-title:not(:last-child) {
+.modal-title:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -368,6 +376,7 @@ SEARCH RESULTS PAGE
   color: white;
   font-size: large;
   margin-right: 16px;
+  margin-bottom: 8px;
 }
 
 /* 
