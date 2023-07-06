@@ -28,7 +28,7 @@ function Searchbar2() {
 
   async function search() {
     const { data } = await axios.get(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=59334251&s=${searchId}`
+      `https://www.omdbapi.com/?i=tt3896198&apikey=59334251&s=${searchId}`
     );
     setFilms(data.Search || []);
     setMovies(data.Search ? [] : data.Movies || []);
@@ -60,7 +60,7 @@ function Searchbar2() {
     setCurrentPage(1);
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?apikey=59334251&s=${searchId}`
+        `https://www.omdbapi.com/?apikey=59334251&s=${searchId}`
       );
       const data = response.data;
       const { Search } = data;
