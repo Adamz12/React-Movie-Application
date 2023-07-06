@@ -37,7 +37,9 @@ const ModalOptions = () => {
           <Link to="/search" className="modal-title">
             <h2>SEARCH</h2>
           </Link>
-          <h2 className="modal-title">CONTACT</h2>
+          <Link to="#" className="modal-title">
+            <h2>CONTACT</h2>
+          </Link>
         </div>
       </Modal>
     </div>

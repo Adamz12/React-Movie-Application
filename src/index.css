@@ -756,6 +756,10 @@ RESPONSIVENESS
   .app__logo--searchbar2 {
     width: 300px;
   }
+
+  .modal-title {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 400px) {
