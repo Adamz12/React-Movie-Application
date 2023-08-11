@@ -10,6 +10,8 @@ function MovieInfo() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Skeleton
+
   useEffect(() => {
     async function fetchMovie() {
       try {
