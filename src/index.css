@@ -418,6 +418,10 @@ MovieInfo Page
 
 */
 
+ /* *{
+  background-color: white;
+ } */
+
 .container__movieinfo {
   display: flex;
   justify-content: center;
@@ -528,6 +532,7 @@ MovieInfo Page
 .movie__mb {
   margin-bottom: 24px;
 }
+
 
 .btn__wrapper {
   display: flex;
